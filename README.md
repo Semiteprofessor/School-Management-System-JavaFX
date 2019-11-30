@@ -6,3 +6,5 @@ School Management Software
 2.  Upload the libraries from the folder 'lib'
 3.  Run and login
 4.  Username: semiteprofessor, Password: tayelolu
+
+
