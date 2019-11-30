@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="StaffInfo" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a42e638e-4fba-4d5e-b99c-1a03fa4e7cdb">
+	<property name="com.jaspersoft.studio.data.sql.tables" value="c3RhZmZzICwxNSwxNSw5MmI0YWU0Yy1jNWZkLTQwOWItYjljOC02NzM1YWIxYTczZTA7&#xA;"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="SMS"/>
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="495"/>
+	<parameter name="Logo" class="java.net.URL"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM staffs]]>
+	</queryString>
+	<field name="id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="name" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="classes" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="classes"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="gender" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="gender"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="dob" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="dob"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="hired" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.label" value="hired"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="position" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="position"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="department" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="department"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="degree" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="degree"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="salary" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="salary"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="contact" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="contact"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="email"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="address" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<field name="state" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="state"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="staffs"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="116" splitType="Stretch">
+			<rectangle>
+				<reportElement x="-20" y="-20" width="595" height="90" backcolor="#5100FF" uuid="669c6a1b-a9d1-4c17-b59e-5e533b451bdc"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="80" y="0" width="480" height="30" forecolor="#FFFFFF" uuid="712bfb3f-92ce-4f6a-ab9e-90e15704f6fc"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GEOCODEC INTERNATIONAL SCHOOL]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="-10" width="80" height="80" uuid="f46b43aa-705f-4e46-bf81-aa2aadb5368d"/>
+				<imageExpression><![CDATA["C:/Users/GeoCodec/JaspersoftWorkspace/dp.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="161" y="79" width="229" height="30" uuid="d9eff6f8-e5a6-467f-99d3-f4483d089351"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[STAFF INFORMATION]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="166" y="31" width="281" height="20" uuid="311447c1-74a5-46c0-9723-93d4834a8e5a"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[308B Murtala Muhammed Way, Yaba Lagos]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="470" y="80" width="100" height="30" uuid="690d55da-9686-412f-bd45-d1b9f41274a7"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="446" splitType="Prevent">
+			<textField>
+				<reportElement x="173" y="0" width="201" height="30" uuid="65281edb-0d0e-4a7b-aaa1-6acee2ae48d3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="779c7052-7227-4254-ba6b-642e0c0e235e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="30" width="198" height="30" uuid="805f5619-44b2-418f-acb9-0b3b95f41301">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bc70324a-e683-4911-a957-4cee5e957de5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="60" width="198" height="30" uuid="cc4ddc21-f208-451f-b3d2-8552c369a030">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4577291-41f6-4d83-8a47-96d7e8c3d4e5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{classes}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="174" y="90" width="198" height="30" uuid="c87fa2de-ff99-4c02-98f4-1999fda79d99">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96bb83d6-d15f-4f69-9d7b-6daf8329572c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gender}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="174" y="120" width="198" height="30" uuid="b26dbd9c-a828-4dfd-97ee-8bd5641400ce">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ced61d15-003d-4c5c-af6c-02695176ccc2"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dob}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="150" width="198" height="30" uuid="49be0f0f-829e-4445-b2e0-717dc0954279">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="23028a2c-c92c-4a13-b44b-953ba9065d6c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hired}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="180" width="198" height="30" uuid="dfb32349-870d-43c7-882d-a88bc573d618">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="28d126de-deab-4ad6-b16f-1a146f2ad0b2"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{department}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="174" y="210" width="198" height="30" uuid="d1427be3-309a-4930-9511-3d75d866f821">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dfe079ed-4695-4a92-acf8-e144b55b6593"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{position}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="240" width="198" height="30" uuid="340e80f9-dfa8-4e67-830c-d6e5a6c6ba52">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7af8f6af-5db9-4868-ae85-4c949b383a56"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{degree}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="270" width="198" height="30" uuid="6ae8a54a-b5c1-48e3-95a2-7ecf3a5246db">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9d90ab6c-5cf9-4897-a3db-324348e133d5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{salary}]]></textFieldExpression>
+			</textField>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="173" y="300" width="198" height="30" uuid="a6c05f9a-f9f4-4a09-af80-b51ca0fe659b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6b66499d-5e16-4dbe-a2a4-41476d8128dd"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{contact}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="330" width="198" height="30" uuid="02fb49d3-5d82-4a9a-90d5-05385fc165a5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a87294ca-4abb-4eb5-96f6-5ddd55718a8e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="19" y="-1" width="139" height="30" uuid="67a7286a-64fa-42db-80cb-852d1e57985a">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="779c7052-7227-4254-ba6b-642e0c0e235e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Staff Id:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="30" width="139" height="30" uuid="8103f3e8-e936-4a7b-bac5-edd8457e94c4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="bc70324a-e683-4911-a957-4cee5e957de5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Staff Name:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="60" width="138" height="30" uuid="3d5947a2-a74f-4d1d-baea-23af3b163574">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="d4577291-41f6-4d83-8a47-96d7e8c3d4e5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Classes]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="89" width="138" height="30" uuid="12cffbb7-b7ed-4219-bc3a-e59aebb3349c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="96bb83d6-d15f-4f69-9d7b-6daf8329572c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Gender:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="119" width="138" height="30" uuid="177b9dcd-768e-4b24-baf8-31c09bd19520">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ced61d15-003d-4c5c-af6c-02695176ccc2"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date of Birth:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="149" width="138" height="30" uuid="04c720f9-01a6-44ff-b215-a774627b93de">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="23028a2c-c92c-4a13-b44b-953ba9065d6c"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Hired Date:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="180" width="138" height="30" uuid="8c95788c-a574-4d2f-aab8-1496fe01dd2c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="28d126de-deab-4ad6-b16f-1a146f2ad0b2"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Department:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="210" width="138" height="30" uuid="de223e07-24a9-40ab-9222-7132c8197e7b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="dfe079ed-4695-4a92-acf8-e144b55b6593"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Position:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="240" width="138" height="30" uuid="b6224ec5-ba91-4154-be31-22438984d08d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7af8f6af-5db9-4868-ae85-4c949b383a56"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Degree:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="270" width="138" height="30" uuid="a32d9692-640d-4d4e-abf2-80ff81aa78a4">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="9d90ab6c-5cf9-4897-a3db-324348e133d5"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Salary:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="300" width="138" height="30" uuid="2c7e2064-fe73-450f-9ba2-30153842fede">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="6b66499d-5e16-4dbe-a2a4-41476d8128dd"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Contact:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="19" y="330" width="138" height="30" uuid="833dd869-db1a-49df-b125-5884df77d301">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a87294ca-4abb-4eb5-96f6-5ddd55718a8e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="20" y="361" width="138" height="30" uuid="e4115add-ebde-48db-a1ed-2a527d653e0c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a87294ca-4abb-4eb5-96f6-5ddd55718a8e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="174" y="361" width="198" height="30" uuid="35217505-657a-40d8-a1c6-43fd2aec6a87">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a87294ca-4abb-4eb5-96f6-5ddd55718a8e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="20" y="392" width="138" height="30" uuid="7be355cf-8013-4cc9-8b86-6355bbd535b0">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a87294ca-4abb-4eb5-96f6-5ddd55718a8e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[State:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="174" y="392" width="198" height="30" uuid="7c915ec1-7827-4f39-b438-51de77d40376">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="a87294ca-4abb-4eb5-96f6-5ddd55718a8e"/>
+				</reportElement>
+				<textElement>
+					<font fontName="DejaVu Sans" size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{state}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="19" splitType="Stretch">
+			<staticText>
+				<reportElement x="19" y="-1" width="501" height="20" uuid="6d2ebc12-ceb9-4896-a8ac-a9ddfdbfc43c"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Software Developed By GeoCodec Technologies - (08069095729)   |   Copyright © 2019 GeoCodec International School, Yaba, Lagos]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

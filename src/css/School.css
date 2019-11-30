@@ -1,0 +1,188 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 5, 2019, 7:46:05 PM
+    Author     : GeoCodec
+*/
+
+/*Font Size*/
+
+.fn-14{
+    -fx-font-size: 14px;
+}
+
+.fn-16{
+    -fx-font-size: 16px;
+}
+
+.fn-18{
+    -fx-font-size: 18px;
+}
+
+.fn-20{
+    -fx-font-size: 20px;
+    -fx-background-color: #fff;
+    -fx-font-family:   ubuntu;
+    -fx-font-weight:   bold;
+}
+
+.fn-22{
+    -fx-font-size: 22px;
+}
+
+.fn-24{
+    -fx-font-size: 24px;
+}
+
+.fn-32{
+    -fx-font-size: 32px;
+}
+
+.fn-48{
+    -fx-font-size: 48px;
+}
+
+.fn-64{
+    -fx-font-size: 64px;
+}
+
+
+/*Text Alighment*/
+.txt-center{
+    -fx-text-alignment: center;
+}
+
+.txt-justify{
+    -fx-text-alignment: justify;
+}
+
+.txt-left{
+    -fx-text-alignment: left;
+}
+
+.txt-right{
+    -fx-text-alignment: right;
+}
+
+/*Back Colour*/
+.back-transparent{
+    -fx-background-color: transparent;
+}
+
+.back-color1{
+    -fx-background-color:  #22f5f7;
+}
+
+.back-color2{
+    -fx-background-color:  #ffc723;
+}
+
+.back-color3{
+    -fx-background-color: #019200;
+}
+
+.back-color4{
+    -fx-background-color: #f7c2c2;
+}
+
+.back-color5{
+    -fx-background-color:  #fe4451;
+}
+
+.back-color6{
+    -fx-background-color:  #55d6d0;
+}
+
+.back-color6{
+    -fx-background-color:  #55d6d0;
+}
+
+.back-color7{
+    -fx-background-color:   #003cc7;
+}
+
+
+.back-color8{
+    -fx-background-color:   #9bff00;
+}
+
+
+.back-color9 {
+    -fx-background-color: #fff;
+}
+
+
+
+/*FONT*/
+
+.font{
+    -fx-font-weight: bold;
+}
+
+/*SHAPES*/
+.flat{
+    -fx-background-radius: 2px;
+}
+
+/*BORDERS*/
+.border-30px{
+    -fx-background-radius:  30px;
+}
+
+.border-20px{
+    -fx-border-radius:  20px;
+}
+
+/*HOVERS*/
+.hover-hand:hover{
+    -fx-cursor: hand;
+}
+
+.hover-color1:hover{
+    -fx-background-color:  #55d6d0;
+}
+
+.hover-color2:hover{
+    -fx-background-color:  #f7c2c2;
+}
+
+.hover_border1:hover{
+    -fx-border-color: #0687b5;
+    -fx-border-width: 0px 0px 0px 15px;
+    -fx-background-color: #55d6d0;
+}
+
+.hover_border2:hover{
+    -fx-border-color: #f78787;
+    -fx-border-width: 0px 0px 0px 15px;
+    -fx-background-color: #f7c2c2;
+}
+
+.hover_border3:hover{
+    -fx-border-width: 0px 0px 0px 15px;
+    -fx-background-color: #55d6d0;
+}
+
+.hover_border4:hover{
+    -fx-border-width: 0px 0px 0px 15px;
+    -fx-background-color: #f7c2c2;
+}
+
+.Button1:pressed{
+    -fx-background-color: #9bff00;
+}
+
+.Button2:focused{
+    -fx-border-color: #0687b5;
+    -fx-border-width: 0px 0px 0px 15px;
+    -fx-background-color: #55d6d0;
+    -fx-rotate: 355;
+}
+
+.Button3{
+    -fx-rotate: 90;
+}
+

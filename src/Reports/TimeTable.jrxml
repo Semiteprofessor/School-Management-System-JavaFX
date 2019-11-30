@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JS1_TimeTable" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="86895f91-bbb3-4a88-bec8-221923b4de2e">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[SELECT * FROM timetable]]>
+	</queryString>
+	<field name="c1" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c1"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c2" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c2"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c3" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c3"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c4" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c4"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c5" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c5"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="c6" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c6"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c7" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c7"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c8" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c8"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c9" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c9"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c10" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c10"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c11" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c11"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c12" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c12"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c13" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c13"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c14" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c14"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c15" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c15"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c16" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c16"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c17" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c17"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c18" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c18"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c19" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c19"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c20" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c20"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c21" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c21"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c22" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c22"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c23" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c23"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c24" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c24"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c25" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c25"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c26" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c26"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c27" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c27"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c28" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c28"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c29" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c29"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="c30" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="c30"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+	</field>
+	<field name="classes" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.tree.path" value="timetable"/>
+		<property name="com.jaspersoft.studio.field.label" value="forClass"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="555" splitType="Stretch">
+			<rectangle>
+				<reportElement x="26" y="73" width="759" height="448" backcolor="#00A6FF" uuid="fbf0f1ac-8d99-4d9b-aed4-fea9462cfa88"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="25" y="72" width="759" height="80" backcolor="#A6FF00" uuid="506968c9-1427-4ed7-9e72-1c2ca4ea9e8f"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="26" y="72" width="98" height="448" backcolor="#FFAA00" uuid="959f01b9-6263-4fbb-ab08-cc410b49f057"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="26" y="73" width="98" height="79" backcolor="#FF0400" uuid="d05bc097-7655-4d72-af8c-c3bca0d226b8"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<line>
+				<reportElement x="26" y="72" width="97" height="80" uuid="b3d95a9f-5873-483b-a850-db645f0c6e46"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="26" y="225" width="759" height="1" uuid="37238514-1d1c-48bc-ba64-9004cde3bea6">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="27" y="297" width="759" height="1" uuid="6329e1d1-1066-4da7-96ad-bd80c911b171">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="27" y="446" width="759" height="1" uuid="ee57cc15-2484-4fde-a907-c9669ace3b47">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="26" y="374" width="759" height="1" uuid="013fc909-d98e-4090-ac8e-1b7059129312">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="236" y="72" width="1" height="448" uuid="5378b710-17c9-491a-a5ce-bb0f08cdead8"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="349" y="74" width="1" height="448" uuid="54188e94-f51b-4189-9d3e-6ad7942a3979"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="392" y="72" width="1" height="448" uuid="4e2f93d5-0113-46c4-9d21-146fc00b227a"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="669" y="74" width="1" height="448" uuid="66804c8a-2c92-44b2-8dca-5bb93544a888"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<rectangle>
+				<reportElement x="350" y="73" width="42" height="448" backcolor="#FF00D9" uuid="af677281-37fa-4c8b-ad8f-030e2d40b735"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<rectangle>
+				<reportElement x="511" y="74" width="42" height="447" backcolor="#FF00D9" uuid="7ee9d606-0c2b-4beb-ade4-eb1d958b94f5"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</rectangle>
+			<staticText>
+				<reportElement x="25" y="185" width="100" height="30" uuid="cb91a077-04db-42d3-b01e-447522bc5293"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MONDAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="24" y="254" width="100" height="30" uuid="411d731f-7535-4d1a-8b62-31e7cd866ea9"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[TUESDAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="332" width="120" height="30" uuid="8b400bb4-e0cf-4764-ac94-7fa802e0cb02"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[WEDNESDAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="406" width="120" height="30" uuid="ccecfc32-f8a1-4657-acce-df58de16f9f3"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[THURSDAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="477" width="120" height="30" uuid="9b3732ac-d692-4670-9479-4903ef8f529f"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="13" isBold="true"/>
+				</textElement>
+				<text><![CDATA[FRIDAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="131" width="100" height="30" uuid="30b00f90-b412-448b-b13b-031bab74e64b"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DAY]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="36" y="79" width="100" height="30" uuid="83bac208-ea83-4c21-bccc-53b54370f847"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PERIOD]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="343" y="176" width="42" height="240" uuid="d1d5fde3-2fb7-4dca-83e4-853a8a20f4e0"/>
+				<textElement textAlignment="Center" rotation="Right">
+					<font fontName="DejaVu Sans" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SHORT BREAK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="178" width="42" height="240" uuid="3eae915e-484a-4e74-8e8e-1522ca11cb8a"/>
+				<textElement textAlignment="Center" rotation="Right">
+					<font fontName="DejaVu Sans" size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[LONG BREAK]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="130" y="185" width="100" height="30" uuid="c3cd4232-ea09-41c3-b300-0a00b40d6b5d"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="185" width="100" height="30" uuid="c98e14ee-c36d-4cb2-aaaf-ad1b8f1e5ae5"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="184" width="100" height="30" uuid="c532b79d-0722-436f-94f6-1c027b76af00"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c3}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="561" y="185" width="100" height="30" uuid="ef58e687-20b9-4c99-9c6f-45760345522d"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c4}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="676" y="185" width="100" height="30" uuid="10ed00c3-15a7-4320-bdf1-30dcc3d8ba60"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c5}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="259" width="100" height="30" uuid="25bcab19-c3c2-4ea4-bc16-8ab58dc0dfa5"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c6}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="243" y="259" width="100" height="30" uuid="c3e994c1-6dc2-4f2a-b929-0289f05d7db4"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c7}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="403" y="259" width="100" height="30" uuid="ac2e6ad2-b8fc-465c-b932-0dfc524ba707"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c8}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="561" y="259" width="100" height="30" uuid="8fac3bf2-9ae1-45be-9ec6-0a34c481f348"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c9}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="676" y="259" width="100" height="30" uuid="e562159e-8eb5-48fd-96f9-9046e8400fb2"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c10}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="332" width="100" height="30" uuid="aab8bed8-0c26-419e-8ccc-97d44ead6a08"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c11}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="242" y="331" width="100" height="30" uuid="a056bf5e-804a-4524-a624-27031f07d3b9"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c12}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="400" y="330" width="100" height="30" uuid="f32c924e-cd44-4821-81fa-99e9a44051e1"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c13}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="562" y="330" width="100" height="30" uuid="9c3a2258-b25d-4d79-94dd-60c304603893"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c14}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="678" y="330" width="100" height="30" uuid="6aa501e2-b927-4a70-a3ae-df4f70c8bb51"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c15}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="131" y="406" width="100" height="30" uuid="ea9f0cdc-c899-4d32-8c78-1b575a4059bd"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c16}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="243" y="406" width="100" height="30" uuid="dd4e7e45-6b8d-4b94-9788-178f4cdb5a78"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c17}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="401" y="405" width="100" height="30" uuid="c9ab2765-d275-4843-89c7-ef5aadad7557"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c18}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="404" width="100" height="30" uuid="fdc25ab3-68cd-4c24-a40a-1c1957032d3e"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c19}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="677" y="404" width="100" height="30" uuid="391cb5dd-8377-4ae3-a498-381dde29a8ce"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c20}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="129" y="475" width="100" height="30" uuid="1716db3c-5f46-4e09-bc84-8dc6d73f995d"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c21}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="247" y="476" width="100" height="30" uuid="274c68d9-568b-44cc-9326-41b0a338bec7"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c22}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="477" width="100" height="30" uuid="3cb70d82-7332-4d6b-ab4c-0417cfbf4537"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c23}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="561" y="477" width="100" height="30" uuid="0216d455-ed71-4ebc-96b5-550d08687ba7"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c24}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="677" y="477" width="100" height="30" uuid="4badbba6-3940-4d0c-b8ab-bca8f6b93bf6"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c25}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="130" y="106" width="100" height="30" uuid="11faeed4-b85c-4d63-bec7-95de4ea66d09"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c26}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="241" y="106" width="100" height="30" uuid="0ba24e00-af6e-4019-b1ba-fabb6f5b3a70"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c27}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="402" y="106" width="100" height="30" uuid="790389ec-c696-4b84-a3c8-c836022b7522"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c28}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="562" y="106" width="100" height="30" uuid="7896d366-26e7-4ca5-a4f7-4c79c24e29c7"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c29}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="677" y="106" width="100" height="30" uuid="41f7bb8e-d818-40f8-bace-7d1556244453"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="14" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{c30}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="257" y="27" width="271" height="30" uuid="5b6e32bc-a9eb-40e8-9977-7f004de71b0c"/>
+				<textElement textAlignment="Center">
+					<font fontName="DejaVu Sans" size="24" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{classes}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>

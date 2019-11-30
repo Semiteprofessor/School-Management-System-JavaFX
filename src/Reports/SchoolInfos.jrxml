@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="SchoolInfos" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d2c4f605-81ee-44ff-ac27-127809b04452">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<queryString>
+		<![CDATA[SELECT * FROM schoolinfo]]>
+	</queryString>
+	<field name="schoolName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="School Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="schoolAddress" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="School Address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="classAvailable" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Classes Available"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="schoolType" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="School Type"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="educationalZone" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Educational Zone"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="educationalDistrict" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Educational District"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="administrativeDistrict" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Administrative District"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="municipal" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Municipal"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="lga" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="L.G.A"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="policeArea" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Police Area"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="postalCode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Postal Code"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="dateEstablished" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Date Established"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="schoolID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="School ID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="censusNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Census Number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="schoolExamID" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="School Exam ID"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="principalName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Principal Name"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="principalNo" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Principal Number"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="province" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Province"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="totalLandArea" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Total Land Area"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="totalStudent" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Total Student"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="totalStaff" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Total Staff"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="location" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Location"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="state" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="State"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<field name="email" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="Email Address"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="schoolinfo"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="107" splitType="Stretch">
+			<staticText>
+				<reportElement x="161" y="79" width="229" height="21" uuid="13f13e4c-4db4-4433-aa1e-def80d776577"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="16" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[SCHOOL INFORMATION]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="-20" y="-20" width="595" height="90" backcolor="#5100FF" uuid="d1f2a580-27dc-49a7-abea-71bef26b3c60"/>
+			</rectangle>
+			<image>
+				<reportElement x="0" y="-16" width="90" height="89" uuid="a5da5384-9a5f-41ca-9467-b467c02d4b91"/>
+				<imageExpression><![CDATA["C:/Users/GeoCodec/JaspersoftWorkspace/dp.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="80" y="0" width="480" height="30" forecolor="#FFFFFF" uuid="3c2a180f-f97e-4206-b6f2-0d45e820d14a"/>
+				<textElement>
+					<font fontName="DejaVu Sans" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[GEOCODEC INTERNATIONAL SCHOOL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="166" y="31" width="281" height="20" uuid="cec849fa-392c-43f4-bdfd-79b3c6bd0159"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[308B Murtala Muhammed Way, Yaba Lagos]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="470" y="80" width="100" height="20" uuid="c9383c4c-1c0c-4c7b-ac82-1a8977a31d85"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="600" splitType="Stretch">
+			<textField>
+				<reportElement x="188" y="1" width="372" height="19" uuid="2727113b-c633-4770-a903-1c6569c044b5"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{schoolName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="1" width="100" height="19" uuid="2e0b0899-06e8-4df4-8151-575783f87c56"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[School Name]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="188" y="24" width="372" height="20" uuid="9db0d5e8-68d2-4ab8-9e61-71bd0dd82b30"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{schoolAddress}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="41" y="24" width="100" height="20" uuid="2a2a4e14-d987-44d2-bc11-3f8f58fd6ed3"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[School Address]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="189" y="49" width="308" height="18" uuid="9c108a9f-38cb-46b1-8f05-486d832c8f89"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{classAvailable}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="42" y="49" width="100" height="18" uuid="be2e7581-22a9-4e60-8dfc-3d487f046353"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Classes Available]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="189" y="74" width="308" height="18" uuid="1331b8c2-ba1f-4f74-8c74-bc3c7d79b798"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{schoolType}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="42" y="74" width="100" height="18" uuid="981bbe38-b95a-408a-9ac9-b4246e15a8c7"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[School Type]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="189" y="100" width="308" height="19" uuid="6e940837-e0a5-42fb-88ec-2e3a807b7807"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{educationalZone}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="42" y="100" width="100" height="19" uuid="93c621b3-b177-4b6a-8d5e-1f1b2ae0ffee"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Educational Zone]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="189" y="126" width="308" height="19" uuid="9e43a8b1-b41d-4983-ac88-39511bace8a0"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{educationalDistrict}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="42" y="126" width="124" height="19" uuid="fe01c006-4fec-454a-a486-e859f6e49bc4"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Educational District]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="152" width="307" height="19" uuid="f6248a46-b98a-4c54-ac4b-8acb0272f275"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{municipal}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="152" width="100" height="19" uuid="1a7f7476-a808-4841-ae35-3e24f2cb54a4"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Municipal]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="178" width="307" height="23" uuid="d80dca12-de0a-49d9-a181-a610449d9d67"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lga}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="178" width="100" height="23" uuid="2a1540a3-21d2-4403-8c72-ae244848844f"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[L.G.A]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="204" width="307" height="21" uuid="58d2ed39-21a5-4d19-8552-52875a5105f5"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{policeArea}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="204" width="100" height="21" uuid="4b82f9c8-8267-436c-b148-203051e281a5"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Police Area]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="230" width="307" height="20" uuid="1cd42494-499a-4c15-b4fb-f982cc9051cb"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{postalCode}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="230" width="100" height="20" uuid="8c3dc1ab-7299-4f99-988e-eac5f123199c"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Postal Code]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="254" width="307" height="30" uuid="fbf5d697-ec66-44d0-8182-9cdb9bb0bb65"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dateEstablished}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="254" width="100" height="30" uuid="e6260aec-0d88-4ca8-856c-3e2ce5219f31"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date Established]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="280" width="306" height="30" uuid="20909cca-bc3e-4120-a393-331984ec9fca"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{schoolID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="280" width="100" height="30" uuid="68142094-256b-4d41-8380-aed6e153d7e3"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[School ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="305" width="307" height="30" uuid="e892ec8b-9494-4fba-bde5-1966c43cefff"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{censusNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="305" width="100" height="30" uuid="459728f8-72ff-427c-bbcd-a76c6b32252c"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Census Number]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="331" width="306" height="30" uuid="4afd7b96-1ee4-4997-aa21-3bcc13bac9e8"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{schoolExamID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="331" width="100" height="30" uuid="fe81feff-0d52-4514-9b9f-858ef9d167b5"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[School Exam ID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="190" y="386" width="307" height="30" uuid="c86fb896-bbd1-46e1-8492-aa6ec9cc698a"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{principalNo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="386" width="100" height="30" uuid="cc50e529-cd4c-4c43-9e20-bcde6abf9990"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Principal Number]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="412" width="306" height="30" uuid="1724a257-2d09-4af6-9f7b-d187b72a304f"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{province}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="412" width="100" height="30" uuid="24a8e8a1-c6fa-4a2e-988d-9e8d06a3d96b"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Province]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="192" y="437" width="305" height="30" uuid="3c41ad7f-4b01-4d30-990a-ea3315717d71"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalLandArea}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="437" width="100" height="30" uuid="5cce67c9-2546-4202-a379-a1a29fc8a31c"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Land Area]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="463" width="306" height="30" uuid="6efb12bd-a632-4a70-9441-4db1e9f39395"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalStudent}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="463" width="100" height="30" uuid="20c3f9bc-6eb2-4172-a332-4de5afedd210"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Student]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="192" y="491" width="305" height="30" uuid="db968a15-67d0-4866-b4cb-2af508cf503f"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{totalStaff}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="491" width="100" height="30" uuid="f69ed2df-c792-4796-92bc-1da2f4ed0a8b"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Staff]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="193" y="517" width="304" height="30" uuid="690a3dba-0248-4a1f-a236-059d7c6441bf"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{location}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="517" width="100" height="30" uuid="3bb06069-d555-4327-b29a-b0ce9e2b5c18"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Location]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="194" y="543" width="303" height="27" uuid="423669d4-2499-4144-a8af-363299cfdd8f"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{state}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="543" width="100" height="27" uuid="62b787cc-1bdf-425a-8ffb-a4300191ed77"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[State]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="194" y="569" width="303" height="20" uuid="9c568c46-23f6-4151-afec-bc6cf7ac21c7"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{email}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="43" y="569" width="100" height="20" uuid="5d7b63bb-f393-4389-8871-02ee5f471703"/>
+				<textElement>
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Email Address]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="191" y="359" width="100" height="30" uuid="37211a14-62aa-4904-8870-c166e22e679b"/>
+				<textElement>
+					<font size="11"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{principalName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="42" y="358" width="100" height="30" uuid="032e8061-c28e-4a35-a031-ed119bb96acc"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Principal Name]]></text>
+			</staticText>
+		</band>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch">
+			<staticText>
+				<reportElement x="25" y="13" width="501" height="20" uuid="e426821a-2b57-4c9f-a226-c57110d4e848"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Software Developed By GeoCodec Technologies - (08069095729)   |   Copyright © 2019 GeoCodec International School, Yaba, Lagos]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>
