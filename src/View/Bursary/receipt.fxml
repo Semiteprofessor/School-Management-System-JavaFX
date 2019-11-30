@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1368.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Bursary.receiptController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9f0ff" height="410.0" layoutX="326.0" layoutY="183.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="816.0" />
+      <Pane layoutX="-7.0" prefHeight="91.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="374.0" layoutY="59.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Cash Receipt" wrappingWidth="513.3333892822266">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="87.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnBack" layoutX="8.0" layoutY="1.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="61.0" prefWidth="53.0" style="-fx-background-color: transparent;" stylesheets="@../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="75.0" fitWidth="191.0" layoutX="847.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/4505_-_Cheque-512.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="rootAnchorPane" layoutX="-1.0" layoutY="93.0" prefHeight="749.0" prefWidth="1369.0" stylesheets="@../../css/School.css">
+         <children>
+            <AnchorPane prefHeight="740.0" prefWidth="1369.0" stylesheets="@../../css/main.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="printReportCard" alignment="CENTER" contentDisplay="TOP" layoutX="76.0" layoutY="150.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#printReportCard" prefHeight="116.0" prefWidth="132.0" text="Print Receipt">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="70.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8_Print_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="updateReportCard" contentDisplay="TOP" layoutX="75.0" layoutY="320.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#updateReportCard" prefHeight="116.0" prefWidth="132.0" text="Update Receipt">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="59.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/upgrade-logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="RED" layoutX="387.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash Receipt" textAlignment="CENTER" wrappingWidth="353.4606018066406">
+                     <font>
+                        <Font name="Ubuntu Bold" size="45.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#005b39" layoutX="329.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Received From" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="180.0" layoutX="599.0" layoutY="223.0" startX="-131.0" stroke="#005b39" strokeWidth="2.0" />
+                  <JFXTextField labelFloat="true" layoutX="480.0" layoutY="189.0" prefHeight="31.0" prefWidth="283.0" />
+                  <Text fill="#005b39" layoutX="801.0" layoutY="218.0" strokeType="OUTSIDE" strokeWidth="0.0" text="the amount of N" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="200.0" layoutX="925.0" layoutY="223.0" startX="27.0" stroke="#005b39" strokeWidth="2.0" />
+                  <JFXTextField labelFloat="true" layoutX="955.0" layoutY="190.0" prefHeight="31.0" prefWidth="168.0" />
+                  <Text fill="#005b39" layoutX="329.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Amount in Word" textAlignment="CENTER" wrappingWidth="167.99999959766865">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="521.0" layoutX="601.0" layoutY="274.0" startX="-116.0" stroke="#005b39" strokeWidth="2.0" />
+                  <JFXTextField labelFloat="true" layoutX="495.0" layoutY="240.0" prefHeight="31.0" prefWidth="622.0" />
+                  <Text fill="#005b39" layoutX="846.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Receipt No:" textAlignment="CENTER" wrappingWidth="112.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="200.0" layoutX="930.0" layoutY="129.0" startX="27.0" stroke="#005b39" strokeWidth="2.0" />
+                  <JFXTextField labelFloat="true" layoutX="960.0" layoutY="96.0" prefHeight="31.0" prefWidth="168.0" />
+                  <Text fill="#005b39" layoutX="848.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date:" textAlignment="CENTER" wrappingWidth="54.99998852610588">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="200.0" layoutX="930.0" layoutY="165.0" startX="-27.0" startY="1.4019775390625" stroke="#005b39" strokeWidth="2.0" />
+                  <JFXTextField labelFloat="true" layoutX="911.0" layoutY="132.0" prefHeight="31.0" prefWidth="217.0" />
+                  <Text fill="#005b39" layoutX="334.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For" textAlignment="CENTER" wrappingWidth="46.99999959766865">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="224.0" layoutX="606.0" layoutY="322.0" startX="-233.0" stroke="#005b39" strokeWidth="2.0" />
+                  <JFXTextField labelFloat="true" layoutX="376.0" layoutY="288.0" prefHeight="31.0" prefWidth="445.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9f0ff" height="196.0" layoutX="920.0" layoutY="292.0" stroke="#005b39" strokeType="INSIDE" strokeWidth="3.0" width="206.0" />
+                  <Line endX="66.0" endY="19.0" layoutX="914.0" layoutY="467.0" startX="66.0" startY="-173.44400024414062" stroke="#005b39" strokeWidth="2.0" />
+                  <Line endX="28.0" endY="3.0517578125E-5" layoutX="1095.0" layoutY="333.0" startX="-172.0" startY="3.0517578125E-5" stroke="#005b39" strokeWidth="2.0" />
+                  <Line endX="28.0" endY="3.0517578125E-5" layoutX="1095.0" layoutY="370.0" startX="-172.0" startY="3.0517578125E-5" stroke="#005b39" strokeWidth="2.0" />
+                  <Text fill="#005b39" layoutX="971.0" layoutY="322.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#005b39" layoutX="970.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cheque" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#005b39" layoutX="973.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transfer" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="28.0" endY="3.0517578125E-5" layoutX="1095.0" layoutY="408.0" startX="-172.0" startY="3.0517578125E-5" stroke="#005b39" strokeWidth="2.0" />
+                  <Text fill="#005b39" layoutX="974.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="POS" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="28.0" endY="3.0517578125E-5" layoutX="1094.0" layoutY="445.0" startX="-171.0" stroke="#005b39" strokeWidth="2.0" />
+                  <Text fill="#005b39" layoutX="974.0" layoutY="473.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bank Deposit" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#005b39" layoutX="334.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Received From" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="124.0" layoutX="604.0" layoutY="493.0" startX="-131.0" stroke="#005b39" strokeWidth="2.0" />
+                  <JFXTextField labelFloat="true" layoutX="475.0" layoutY="459.0" prefHeight="31.0" prefWidth="250.0" />
+                  <Text fill="#005b39" layoutX="338.0" layoutY="385.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Payment" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="180.0" layoutX="608.0" layoutY="390.0" startX="-131.0" stroke="#005b39" strokeWidth="2.0" />
+                  <JFXTextField labelFloat="true" layoutX="489.0" layoutY="356.0" prefHeight="31.0" prefWidth="283.0" />
+                  <Text fill="#005b39" layoutX="338.0" layoutY="422.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Arrears" textAlignment="CENTER" wrappingWidth="89.00000527501106">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="180.0" layoutX="607.0" layoutY="430.0" startX="-186.0" stroke="#005b39" strokeWidth="2.0" />
+                  <JFXTextField labelFloat="true" layoutX="430.0" layoutY="396.0" prefHeight="31.0" prefWidth="341.0" />
+                  <Text fill="#005b39" layoutX="692.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign" textAlignment="CENTER" wrappingWidth="152.00000256299973">
+                     <font>
+                        <Font name="Ubuntu Bold" size="18.0" />
+                     </font>
+                  </Text>
+                  <Line endX="180.0" layoutX="724.0" layoutY="492.0" startX="67.0" stroke="#005b39" strokeWidth="2.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

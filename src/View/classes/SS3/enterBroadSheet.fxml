@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.classes.SS3.enterBroadSheetController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="101.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="140.0" layoutY="66.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Enter BroadSheet" wrappingWidth="738.6666717529297">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="205.0" layoutY="90.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="107.0" fitWidth="105.0" layoutX="902.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Excel-Icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBack" layoutX="8.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="47.0" prefWidth="45.0" style="-fx-background-color: transparent;" stylesheets="@../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="93.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+      <GridPane layoutX="278.0" layoutY="293.0" prefHeight="225.0" prefWidth="778.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#btnScience" prefHeight="224.0" prefWidth="400.0" style="-fx-font-weight: bold; -fx-font-family: ubuntu; -fx-font-size: 16;" stylesheets="@../../../css/School.css" text="Science Time Table">
+               <graphic>
+                  <ImageView fitHeight="119.0" fitWidth="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/lab_tube_icon_chemistry_flask_chemical_laboratory_glassware_glass-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ubuntu Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="1.4" specularConstant="2.0" specularExponent="40.0" surfaceScale="5.0">
+                     <bumpInput>
+                        <Shadow blurType="ONE_PASS_BOX" color="WHITE" height="100.0" radius="49.5" width="100.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="300.0" elevation="40.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover_border1" />
+                  <String fx:value="back-color4" />
+                  <String fx:value="Button1" />
+                  <String fx:value="Button2" />
+               </styleClass>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#btnCommercial" prefHeight="224.0" prefWidth="400.0" style="-fx-font-weight: bold; -fx-font-family: ubuntu; -fx-font-size: 16;" stylesheets="@../../../css/School.css" text="Commercial Time Table" GridPane.columnIndex="1">
+               <graphic>
+                  <ImageView fitHeight="120.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/Finance_loan_money-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ubuntu Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="1.4" specularConstant="2.0" specularExponent="40.0" surfaceScale="5.0">
+                     <bumpInput>
+                        <Shadow blurType="ONE_PASS_BOX" color="WHITE" height="100.0" radius="49.5" width="100.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="300.0" elevation="40.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover_border1" />
+                  <String fx:value="back-color4" />
+                  <String fx:value="Button1" />
+                  <String fx:value="Button2" />
+               </styleClass>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+            <Button contentDisplay="TOP" mnemonicParsing="false" onAction="#btnArt" prefHeight="224.0" prefWidth="400.0" style="-fx-font-weight: bold; -fx-font-family: ubuntu; -fx-font-size: 16;" stylesheets="@../../../css/School.css" text="Art Time Table" GridPane.columnIndex="2">
+               <graphic>
+                  <ImageView fitHeight="127.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/law-lawyer-company-judge-512.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <font>
+                  <Font name="Ubuntu Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+               <effect>
+                  <Lighting diffuseConstant="1.4" specularConstant="2.0" specularExponent="40.0" surfaceScale="5.0">
+                     <bumpInput>
+                        <Shadow blurType="ONE_PASS_BOX" color="WHITE" height="100.0" radius="49.5" width="100.0" />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant azimuth="300.0" elevation="40.0" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover_border1" />
+                  <String fx:value="back-color4" />
+                  <String fx:value="Button1" />
+                  <String fx:value="Button2" />
+               </styleClass>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+   <stylesheets>
+      <URL value="@../../../css/School.css" />
+      <URL value="@../../../css/main.css" />
+   </stylesheets>
+</AnchorPane>

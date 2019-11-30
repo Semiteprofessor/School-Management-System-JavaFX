@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Bursary.editPaymentController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="118.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;">
+         <children>
+            <Text fill="WHITE" layoutX="361.0" layoutY="76.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Edit payment" wrappingWidth="612.3333282470703">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="361.0" layoutY="104.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="120.0" fitWidth="126.0" layoutX="862.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_Edit_Property_96px.png" />
+               </image>
+            </ImageView>
+            <Button layoutX="21.0" layoutY="13.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="47.0" prefWidth="45.0" style="-fx-background-color: transparent;" stylesheets="@../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="93.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+      <GridPane layoutX="345.0" layoutY="211.0" prefHeight="439.0" prefWidth="962.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="574.0" minWidth="10.0" prefWidth="566.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="50.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="583.0" minWidth="10.0" prefWidth="567.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="-Infinity" prefHeight="2.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="-Infinity" prefHeight="2.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="-Infinity" prefHeight="2.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="-Infinity" prefHeight="2.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="-Infinity" prefHeight="2.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="clmStudentName" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="Full Name" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmClasses" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="Class" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmPayment1" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="1st Payment" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmPayment2" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="2nd Payment" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.rowIndex="10">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmPayment3" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="3rd Payment" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmActualFee" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="Actual Fee" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="Student No" style="-fx-background-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmArrears" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="Arrears" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="clmPaymentMode" editable="true" focusColor="WHITE" labelFloat="true" prefHeight="45.0" prefWidth="580.0" promptText="Mode of Payment" style="-fx-font-weight: regular; -fx-font-family: ubuntu;" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <stylesheets>
+                  <URL value="@../../css/School.css" />
+                  <URL value="@../../css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="fn-14" />
+                  <String fx:value="combo-box" />
+               </styleClass>
+            </JFXComboBox>
+            <JFXComboBox fx:id="clmPaymentStatus" editable="true" focusColor="WHITE" labelFloat="true" prefHeight="45.0" prefWidth="580.0" promptText="Status" style="-fx-font-weight: regular; -fx-font-family: ubuntu;" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <stylesheets>
+                  <URL value="@../../css/School.css" />
+                  <URL value="@../../css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="fn-14" />
+                  <String fx:value="combo-box" />
+               </styleClass>
+            </JFXComboBox>
+            <JFXComboBox fx:id="clmTerm" editable="true" focusColor="WHITE" labelFloat="true" prefHeight="45.0" prefWidth="580.0" promptText="Term" style="-fx-font-weight: regular; -fx-font-family: ubuntu;" unFocusColor="WHITE" GridPane.rowIndex="6">
+               <stylesheets>
+                  <URL value="@../../css/School.css" />
+                  <URL value="@../../css/main.css" />
+               </stylesheets>
+               <styleClass>
+                  <String fx:value="fn-14" />
+                  <String fx:value="combo-box" />
+               </styleClass>
+            </JFXComboBox>
+         </children>
+      </GridPane>
+      <VBox alignment="TOP_CENTER" layoutX="15.0" layoutY="217.0" prefHeight="411.0" prefWidth="311.0" spacing="5.0">
+         <children>
+            <ImageView fx:id="imageViewPatientImage" fitHeight="291.0" fitWidth="295.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/avater.jpg" />
+               </image>
+            </ImageView>
+            <HBox prefHeight="41.0" prefWidth="311.0" />
+            <Button mnemonicParsing="false" onAction="#selectPatientImageOnAction" prefHeight="52.0" prefWidth="168.0" style="-fx-font-weight: bold;" stylesheets="@../../css/main.css" text="Add Student Image">
+               <styleClass>
+                  <String fx:value="btn-secondary" />
+                  <String fx:value="hover-hand" />
+               </styleClass>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="btnPrint" layoutX="1041.0" layoutY="651.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnPrint" prefHeight="45.0" prefWidth="150.0" text="Print">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_Print_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="785.0" layoutY="651.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnDelete" prefHeight="45.0" prefWidth="150.0" text="Delete">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_Cancel_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="535.0" layoutY="652.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="45.0" prefWidth="150.0" text="Update">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/upgrade-logo-png-6.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <TextField fx:id="AdNo" layoutX="365.0" layoutY="147.0" prefHeight="37.0" prefWidth="399.0" promptText="Enter Student No" />
+      <Button fx:id="searchStudent" layoutX="808.0" layoutY="140.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#searchStudent" prefHeight="50.0" prefWidth="134.0" text="Search">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_Search_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

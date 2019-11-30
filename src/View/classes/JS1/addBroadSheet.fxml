@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.classes.JS1.addBroadSheetController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="88.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="210.0" layoutY="59.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Add Scores" wrappingWidth="680.0">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="210.0" layoutY="82.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="94.0" fitWidth="123.0" layoutX="916.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/icons8_Add_Property_96px.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBack" layoutX="8.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="47.0" prefWidth="45.0" style="-fx-background-color: transparent;" stylesheets="@../../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+      <AnchorPane id="AnchorPane" layoutY="87.0" prefHeight="681.0" prefWidth="1368.0" stylesheets="@../../../css/main.css">
+         <children>
+            <GridPane layoutX="47.0" layoutY="156.0" prefHeight="63.0" prefWidth="1275.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXTextField fx:id="clmID" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID47" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID48" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID49" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID5" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="10">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID8" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID494" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="11">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID498" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID484" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="12">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID488" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID477" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="13">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID4711" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </GridPane>
+            <Text layoutX="153.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ENGLISH LANGUAGE">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="615.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MATHEMATICS">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1086.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PHYSICS">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <GridPane layoutX="47.0" layoutY="258.0" prefHeight="53.0" prefWidth="1273.0">
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <children>
+                  <JFXTextField fx:id="clmID14" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID10" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID3" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="10">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID4911" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID497" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="6">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID493" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="11">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID4811" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="2">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID487" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="7">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID483" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="12">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID4714" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID4710" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="8">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID476" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="13">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </GridPane>
+            <Text layoutX="153.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CHEMISTRY">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="636.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BIOLOGY">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1086.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AGRIC SCIENCE">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="153.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FURTHER MATHEMATICS">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="615.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIVIC EDUCATION">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1086.0" layoutY="354.0" strokeType="OUTSIDE" strokeWidth="0.0" text="I. R. S">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="153.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C. R. S">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="615.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GEOGRAPHY">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="1086.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ECONOMICS">
+               <font>
+                  <Font name="Ubuntu Bold" size="18.0" />
+               </font>
+            </Text>
+            <GridPane layoutX="63.0" layoutY="33.0" prefHeight="70.0" prefWidth="1234.0">
+              <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="20.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="20.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <JFXTextField fx:id="clmID4" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="247.0" promptText="Student Name" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID41" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="247.0" promptText="Class" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="3">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID411" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="247.0" promptText="Term" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="5">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="clmID42" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="247.0" promptText="Student No" style="-fx-background-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+      <Button layoutX="818.0" layoutY="644.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#addStud" prefHeight="64.0" prefWidth="190.0" text="Add">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/add_black.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../../css/main.css" />
+            <URL value="@../../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color2" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <Button layoutX="390.0" layoutY="645.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#Reset" prefHeight="64.0" prefWidth="190.0" text="Reset">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="120.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/icons8_Synchronize_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../../css/main.css" />
+            <URL value="@../../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <GridPane layoutX="45.0" layoutY="441.0" prefHeight="53.0" prefWidth="1275.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="clmID13" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID7" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="5">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID2" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="10">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID4910" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID496" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="6">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID492" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="11">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID4810" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID486" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="7">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID482" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="12">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID4713" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID479" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="8">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID475" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="13">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+      <GridPane layoutX="45.0" layoutY="541.0" prefHeight="63.0" prefWidth="1275.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="clmID9" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID6" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID1" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Test" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="10" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID499" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID495" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID491" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Exam" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="11" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID489" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID485" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID481" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Total" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="12" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID4712" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID478" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmID474" focusColor="WHITE" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="71.0" promptText="Grade" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="13" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

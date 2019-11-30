@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="manageStudents" prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.classes.SS2.Science.manageSubjectController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="101.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="320.0" layoutY="56.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Manage Subject" wrappingWidth="625.3333435058594">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="323.0" layoutY="85.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="96.0" fitWidth="99.0" layoutX="947.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Images/common_43_icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBack" layoutX="8.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="47.0" prefWidth="45.0" style="-fx-background-color: transparent;" stylesheets="@../../../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="93.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+      <GridPane layoutX="417.0" layoutY="213.0" prefHeight="324.0" prefWidth="871.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="574.0" minWidth="10.0" prefWidth="566.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="10.0" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="583.0" minWidth="10.0" prefWidth="567.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="-Infinity" prefHeight="2.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="-Infinity" prefHeight="5.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button fx:id="btnPrint" layoutX="856.0" layoutY="606.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnPrint" prefHeight="65.0" prefWidth="150.0" text="Print">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="61.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Images/icons8_Print_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../../../css/main.css" />
+            <URL value="@../../../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="600.0" layoutY="606.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnDelete" prefHeight="65.0" prefWidth="150.0" text="Delete">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="62.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Images/icons8_Cancel_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../../../css/main.css" />
+            <URL value="@../../../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <Button fx:id="btnUpdate" layoutX="350.0" layoutY="607.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnUpdate" prefHeight="65.0" prefWidth="150.0" text="Update">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="61.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Images/upgrade-logo-png-6.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../../../css/main.css" />
+            <URL value="@../../../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <GridPane layoutX="507.0" layoutY="241.0" prefHeight="129.0" prefWidth="603.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="574.0" minWidth="10.0" prefWidth="566.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="583.0" minWidth="10.0" prefWidth="567.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="45.0" minHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="29.0" minHeight="-Infinity" prefHeight="18.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.0" minHeight="-Infinity" prefHeight="65.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <TextField fx:id="AdNo" layoutX="460.0" layoutY="143.0" prefHeight="37.0" prefWidth="340.0" promptText="Enter Subject Name" />
+      <Button fx:id="searchStudent" layoutX="831.0" layoutY="139.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#searchStudent" prefHeight="45.0" prefWidth="127.0" text="Search">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../Images/icons8_Search_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../../../css/main.css" />
+            <URL value="@../../../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <TextArea fx:id="clmOutline" layoutX="138.0" layoutY="375.0" prefHeight="163.0" prefWidth="526.0" promptText="Subject Outline" stylesheets="@../../../../css/main.css" />
+      <TextArea fx:id="clmNote" layoutX="692.0" layoutY="376.0" prefHeight="162.0" prefWidth="526.0" promptText="Note" stylesheets="@../../../../css/main.css" />
+      <GridPane layoutX="216.0" layoutY="201.0" prefHeight="119.0" prefWidth="984.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="574.0" minWidth="10.0" prefWidth="566.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="583.0" minWidth="10.0" prefWidth="567.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="45.0" minHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.0" minHeight="-Infinity" prefHeight="45.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField fx:id="clmID" focusColor="BLACK" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="S/N" style="-fx-background-color: white;" unFocusColor="WHITE">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmName" focusColor="BLACK" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="Subject Name" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="clmTeacher" focusColor="BLACK" labelFloat="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="524.0" promptText="Subject Teacher" style="-fx-background-color: white;" unFocusColor="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXComboBox fx:id="clmTerm" focusColor="BLACK" labelFloat="true" prefHeight="45.0" prefWidth="524.0" promptText="Term" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
