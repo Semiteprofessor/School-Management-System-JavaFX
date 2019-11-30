@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Event.eventController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="83.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="345.0" layoutY="48.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Management" wrappingWidth="513.3333892822266">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="346.0" layoutY="74.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="74.0" fitWidth="139.0" layoutX="861.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/ProjectManagement_Icon.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBack" layoutX="13.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="47.0" prefWidth="84.0" style="-fx-background-color: transparent;" stylesheets="@../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="66.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+      <VBox alignment="CENTER" layoutX="57.0" layoutY="123.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="273.0" style="-fx-background-color: #ff3b49;" styleClass="card">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <ImageView fitHeight="235.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/man_PNG6534.png" />
+               </image>
+            </ImageView>
+            <HBox minHeight="-Infinity" prefHeight="0.0" prefWidth="228.0" />
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="279.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+            <URL value="@../../css/dark-theme.css" />
+         </stylesheets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="381.0" layoutY="123.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="273.0" style="-fx-background-color: #ff3b49;" styleClass="card">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <ImageView fitHeight="235.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/man_PNG6534.png" />
+               </image>
+            </ImageView>
+            <HBox minHeight="-Infinity" prefHeight="0.0" prefWidth="228.0" />
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="279.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+            <URL value="@../../css/dark-theme.css" />
+         </stylesheets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="710.0" layoutY="124.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="273.0" style="-fx-background-color: #ff3b49;" styleClass="card">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <ImageView fitHeight="235.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/man_PNG6534.png" />
+               </image>
+            </ImageView>
+            <HBox minHeight="-Infinity" prefHeight="0.0" prefWidth="228.0" />
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="279.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+            <URL value="@../../css/dark-theme.css" />
+         </stylesheets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="1033.0" layoutY="124.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="273.0" style="-fx-background-color: #ff3b49;" styleClass="card">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <ImageView fitHeight="235.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/man_PNG6534.png" />
+               </image>
+            </ImageView>
+            <HBox minHeight="-Infinity" prefHeight="0.0" prefWidth="228.0" />
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="279.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+            <URL value="@../../css/dark-theme.css" />
+         </stylesheets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="57.0" layoutY="415.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="273.0" style="-fx-background-color: #ff3b49;" styleClass="card">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <ImageView fitHeight="235.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/man_PNG6534.png" />
+               </image>
+            </ImageView>
+            <HBox minHeight="-Infinity" prefHeight="0.0" prefWidth="228.0" />
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="279.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+            <URL value="@../../css/dark-theme.css" />
+         </stylesheets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="381.0" layoutY="416.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="273.0" style="-fx-background-color: #ff3b49;" styleClass="card">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <ImageView fitHeight="235.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/man_PNG6534.png" />
+               </image>
+            </ImageView>
+            <HBox minHeight="-Infinity" prefHeight="0.0" prefWidth="228.0" />
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="279.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+            <URL value="@../../css/dark-theme.css" />
+         </stylesheets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="710.0" layoutY="417.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="273.0" style="-fx-background-color: #ff3b49;" styleClass="card">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <ImageView fitHeight="235.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/man_PNG6534.png" />
+               </image>
+            </ImageView>
+            <HBox minHeight="-Infinity" prefHeight="0.0" prefWidth="228.0" />
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="279.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+            <URL value="@../../css/dark-theme.css" />
+         </stylesheets>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="1033.0" layoutY="418.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="234.0" prefWidth="273.0" style="-fx-background-color: #ff3b49;" styleClass="card">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <ImageView fitHeight="235.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/man_PNG6534.png" />
+               </image>
+            </ImageView>
+            <HBox minHeight="-Infinity" prefHeight="0.0" prefWidth="228.0" />
+            <HBox alignment="CENTER" prefHeight="54.0" prefWidth="279.0" />
+         </children>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+            <URL value="@../../css/dark-theme.css" />
+         </stylesheets>
+      </VBox>
+      <Button fx:id="viewInfo" layoutX="96.0" layoutY="357.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnViewInfo" prefHeight="45.0" prefWidth="198.0" style="-fx-font-weight: bold;" text="View Info" wrapText="true">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+            <String fx:value="border-30px" />
+            <String fx:value="hover-hand" />
+         </styleClass>
+      </Button>
+      <Button fx:id="viewInfo1" layoutX="422.0" layoutY="357.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnViewInfo" prefHeight="45.0" prefWidth="198.0" style="-fx-font-weight: bold;" text="View Info">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+            <String fx:value="border-30px" />
+            <String fx:value="hover-hand" />
+         </styleClass>
+      </Button>
+      <Button fx:id="viewInfo11" layoutX="750.0" layoutY="360.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnViewInfo" prefHeight="45.0" prefWidth="198.0" style="-fx-font-weight: bold;" text="View Info">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+            <String fx:value="border-30px" />
+            <String fx:value="hover-hand" />
+         </styleClass>
+      </Button>
+      <Button fx:id="viewInfo111" layoutX="1075.0" layoutY="357.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnViewInfo" prefHeight="45.0" prefWidth="198.0" style="-fx-font-weight: bold;" text="View Info">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+            <String fx:value="border-30px" />
+            <String fx:value="hover-hand" />
+         </styleClass>
+      </Button>
+      <Button fx:id="viewInfo2" layoutX="96.0" layoutY="650.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnViewInfo" prefHeight="45.0" prefWidth="198.0" style="-fx-font-weight: bold;" text="View Info">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+            <String fx:value="border-30px" />
+            <String fx:value="hover-hand" />
+         </styleClass>
+      </Button>
+      <Button fx:id="viewInfo12" layoutX="422.0" layoutY="652.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnViewInfo" prefHeight="45.0" prefWidth="198.0" style="-fx-font-weight: bold;" text="View Info">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+            <String fx:value="border-30px" />
+            <String fx:value="hover-hand" />
+         </styleClass>
+      </Button>
+      <Button fx:id="viewInfo112" layoutX="750.0" layoutY="653.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnViewInfo" prefHeight="45.0" prefWidth="198.0" style="-fx-font-weight: bold;" text="View Info">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+            <String fx:value="border-30px" />
+            <String fx:value="hover-hand" />
+         </styleClass>
+      </Button>
+      <Button fx:id="viewInfo1111" layoutX="1075.0" layoutY="654.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnViewInfo" prefHeight="45.0" prefWidth="198.0" style="-fx-font-weight: bold;" text="View Info">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+            <String fx:value="border-30px" />
+            <String fx:value="hover-hand" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

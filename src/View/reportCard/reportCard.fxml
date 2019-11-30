@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1368.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reportCard.reportCardController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="665.0" layoutX="174.0" layoutY="96.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1172.0" />
+      <Pane layoutX="-7.0" prefHeight="91.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="374.0" layoutY="59.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Report Card" wrappingWidth="513.3333892822266">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="87.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnBack" layoutX="8.0" layoutY="1.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="61.0" prefWidth="53.0" style="-fx-background-color: transparent;" stylesheets="@../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="73.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="79.0" fitWidth="91.0" layoutX="847.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/unnamed%20(8).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="rootAnchorPane" layoutX="-1.0" layoutY="93.0" prefHeight="749.0" prefWidth="1369.0" stylesheets="@../../css/School.css">
+         <children>
+            <AnchorPane prefHeight="740.0" prefWidth="1369.0" stylesheets="@../../css/main.css" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Button fx:id="printReportCard" alignment="CENTER" contentDisplay="TOP" layoutX="13.0" layoutY="192.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#printReportCard" prefHeight="135.0" prefWidth="152.0" text="Print Report card">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="83.0" fitWidth="89.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8_Print_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="updateReportCard" contentDisplay="TOP" layoutX="12.0" layoutY="398.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#updateReportCard" prefHeight="131.0" prefWidth="152.0" text="Update Report Card">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="71.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/upgrade-logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Text fill="#005b39" layoutX="533.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GEOCODEC INTERNATIONAL SCHOOL" textAlignment="CENTER" wrappingWidth="616.4606018066406">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="AdNo" layoutX="22.0" layoutY="24.0" prefHeight="37.0" prefWidth="131.0" promptText="Enter ID" />
+                  <Button fx:id="searchStudent" layoutX="24.0" layoutY="75.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#searchStudent" prefHeight="45.0" prefWidth="127.0" text="Search">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8_Search_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00754c" height="48.0" layoutX="1189.0" layoutY="113.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="175.0" />
+      <Text fill="#fcfcfc" layoutX="1199.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Report Card">
+         <font>
+            <Font name="Ubuntu Bold" size="27.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="144.0" fitWidth="167.0" layoutX="172.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/dp.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="clmName" labelFloat="true" layoutX="343.0" layoutY="144.0" promptText="Name of Student" />
+      <Line endX="240.66668701171875" endY="-1.52587890625E-5" layoutX="495.0" layoutY="177.0" startX="-131.0" stroke="#005b39" strokeWidth="2.0" />
+      <JFXTextField fx:id="clmYearSession" labelFloat="true" layoutX="343.0" layoutY="186.0" promptText="Year and Session" />
+      <Line endX="239.33331298828125" layoutX="495.0" layoutY="219.0" startX="-131.0" stroke="#005b39" strokeWidth="2.0" />
+      <JFXTextField fx:id="clmClassAdviser" labelFloat="true" layoutX="343.0" layoutY="228.0" promptText="Class Adviser" />
+      <Line endX="239.33331298828125" layoutX="495.0" layoutY="261.0" startX="-131.0" stroke="#005b39" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00754c" height="43.0" layoutX="185.0" layoutY="280.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="428.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9f0ff" height="428.0" layoutX="186.0" layoutY="324.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="427.0" />
+      <Line endX="-54.5" endY="388.0" layoutX="424.0" layoutY="366.0" startX="-54.5" startY="-40.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-54.5" endY="388.0" layoutX="489.0" layoutY="367.0" startX="-54.5" startY="-40.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-54.5" endY="388.0" layoutX="552.0" layoutY="366.0" startX="-54.5" startY="-40.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-54.5" endY="388.0" layoutX="613.0" layoutY="366.0" startX="-54.5" startY="-40.0" stroke="WHITE" strokeWidth="5.0" />
+      <Text fill="WHITE" layoutX="220.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECTS">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="393.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Test">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="446.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Exam">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="512.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="566.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grade">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="189.0" layoutY="325.0" prefHeight="420.0" prefWidth="175.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clmSubject1" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+            <JFXComboBox fx:id="clmSubject9" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" GridPane.rowIndex="16" />
+            <JFXComboBox fx:id="clmSubject8" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" GridPane.rowIndex="14" />
+            <JFXComboBox fx:id="clmSubject7" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" GridPane.rowIndex="12" />
+            <JFXComboBox fx:id="clmSubject6" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" GridPane.rowIndex="10" />
+            <JFXComboBox fx:id="clmSubject5" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" GridPane.rowIndex="8" />
+            <JFXComboBox fx:id="clmSubject4" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" GridPane.rowIndex="6" />
+            <JFXComboBox fx:id="clmSubject3" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" GridPane.rowIndex="4" />
+            <JFXComboBox fx:id="clmSubject2" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" GridPane.rowIndex="2" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="371.0" layoutY="325.0" prefHeight="418.0" prefWidth="63.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmTest9" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="16" />
+            <JFXTextField fx:id="clmTest8" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="14" />
+            <JFXTextField fx:id="clmTest7" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="12" />
+            <JFXTextField fx:id="clmTest6" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="10" />
+            <JFXTextField fx:id="clmTest5" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="8" />
+            <JFXTextField fx:id="clmTest4" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="6" />
+            <JFXTextField fx:id="clmTest3" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="4" />
+            <JFXTextField fx:id="clmTest2" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="clmTest1" labelFloat="true" prefHeight="30.0" prefWidth="188.0" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="435.0" layoutY="325.0" prefHeight="419.0" prefWidth="63.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmExam9" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="16" />
+            <JFXTextField fx:id="clmExam8" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="14" />
+            <JFXTextField fx:id="clmExam7" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="12" />
+            <JFXTextField fx:id="clmExam6" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="10" />
+            <JFXTextField fx:id="clmExam5" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="8" />
+            <JFXTextField fx:id="clmExam4" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="6" />
+            <JFXTextField fx:id="clmExam3" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="4" />
+            <JFXTextField fx:id="clmExam2" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmExam1" labelFloat="true" prefHeight="30.0" prefWidth="188.0" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="560.0" layoutY="323.0" prefHeight="423.0" prefWidth="56.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmGrade9" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="16" />
+            <JFXTextField fx:id="clmGrade8" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="14" />
+            <JFXTextField fx:id="clmGrade7" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="12" />
+            <JFXTextField fx:id="clmGrade6" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="10" />
+            <JFXTextField fx:id="clmGrade5" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="8" />
+            <JFXTextField fx:id="clmGrade4" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="6" />
+            <JFXTextField fx:id="clmGrade3" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="4" />
+            <JFXTextField fx:id="clmGrade2" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="clmGrade1" labelFloat="true" prefHeight="30.0" prefWidth="56.0" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="502.0" layoutY="324.0" prefHeight="422.0" prefWidth="56.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmTotal9" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="16" />
+            <JFXTextField fx:id="clmTotal8" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="14" />
+            <JFXTextField fx:id="clmTotal7" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="12" />
+            <JFXTextField fx:id="clmTotal6" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="10" />
+            <JFXTextField fx:id="clmTotal5" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="8" />
+            <JFXTextField fx:id="clmTotal4" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="6" />
+            <JFXTextField fx:id="clmTotal3" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="4" />
+            <JFXTextField fx:id="clmTotal2" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="clmTotal1" labelFloat="true" prefHeight="30.0" prefWidth="56.0" />
+         </children>
+      </GridPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00754c" height="43.0" layoutX="628.0" layoutY="281.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="428.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9f0ff" height="205.0" layoutX="629.0" layoutY="325.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="427.0" />
+      <Text fill="WHITE" layoutX="663.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ATTENDANCE">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="837.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Morning">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="955.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Afternoon">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00754c" height="43.0" layoutX="628.0" layoutY="550.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="428.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9f0ff" height="158.0" layoutX="629.0" layoutY="594.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="427.0" />
+      <Text fill="WHITE" layoutX="663.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GRADE">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="836.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1st">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="896.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2nd">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="960.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3rd">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="1018.0" layoutY="576.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4th">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Line endX="-54.5" endY="170.5560302734375" layoutX="861.0" layoutY="368.0" startX="-54.5" startY="-40.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-54.5" endY="173.22265625" layoutX="988.0" layoutY="368.0" startX="-54.5" startY="-40.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-54.5" endY="118.0" layoutX="871.0" layoutY="635.0" startX="-54.5" startY="-39.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-54.5" endY="118.0" layoutX="936.0" layoutY="636.0" startX="-54.5" startY="-40.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-54.5" endY="117.0" layoutX="999.0" layoutY="636.0" startX="-54.5" startY="-40.0" stroke="WHITE" strokeWidth="5.0" />
+      <Line endX="-54.5" endY="116.0" layoutX="1060.0" layoutY="636.0" startX="-54.5" startY="-40.0" stroke="WHITE" strokeWidth="5.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9f0ff" height="293.0" layoutX="1089.0" layoutY="237.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="243.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00ffa1" height="43.0" layoutX="1089.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="243.0" />
+      <JFXTextField fx:id="clmGradingPeriod" labelFloat="true" layoutX="762.0" layoutY="186.0" promptText="Grading Period" />
+      <Line endX="136.3333740234375" layoutX="914.0" layoutY="219.0" startX="-131.0" stroke="#005b39" strokeWidth="2.0" />
+      <JFXTextField fx:id="clmSchoolYear" labelFloat="true" layoutX="762.0" layoutY="228.0" promptText="School Year" />
+      <Line endX="137.6666259765625" layoutX="914.0" layoutY="261.0" startX="-131.0" stroke="#005b39" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#c9f0ff" height="202.0" layoutX="1088.0" layoutY="550.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="243.0" />
+      <Text fill="#005b39" layoutX="1152.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Grading System">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1137.0" layoutY="572.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teacher's Comment &#10;and Feedback" textAlignment="CENTER">
+         <font>
+            <Font name="Ubuntu Bold" size="15.0" />
+         </font>
+      </Text>
+      <JFXTextArea fx:id="clmComment" layoutX="1095.0" layoutY="600.0" prefHeight="151.0" prefWidth="229.0" />
+      <Line endX="-54.5" endY="220.0" layoutX="1283.0" layoutY="311.0" startX="-54.5" startY="-73.0" stroke="WHITE" strokeWidth="5.0" />
+      <Text fill="#005b39" layoutX="637.0" layoutY="375.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Days of School">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="636.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Days Present">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="637.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Days Absent">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="646.0" layoutY="644.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quarterly Grade">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="648.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Average Grade">
+         <font>
+            <Font name="Ubuntu Bold" size="16.0" />
+         </font>
+      </Text>
+      <GridPane layoutX="813.0" layoutY="343.0" prefHeight="183.0" prefWidth="99.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmMorning3" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="4" />
+            <JFXTextField fx:id="clmMorning2" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="clmMorning1" labelFloat="true" prefHeight="30.0" prefWidth="56.0" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="821.0" layoutY="610.0" prefHeight="119.0" prefWidth="56.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmAverage1" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="clmQtly1" labelFloat="true" prefHeight="30.0" prefWidth="56.0" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="943.0" layoutY="344.0" prefHeight="183.0" prefWidth="102.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmAfternoon3" labelFloat="true" prefHeight="11.0" prefWidth="102.0" GridPane.rowIndex="4" />
+            <JFXTextField fx:id="clmAfternoon2" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="clmAfternoon1" labelFloat="true" prefHeight="30.0" prefWidth="56.0" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="886.0" layoutY="610.0" prefHeight="122.0" prefWidth="56.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmAverage2" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="clmQtly2" labelFloat="true" prefHeight="30.0" prefWidth="56.0" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="943.0" layoutY="610.0" prefHeight="122.0" prefWidth="56.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmAverage3" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="clmQtly3" labelFloat="true" prefHeight="30.0" prefWidth="56.0" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="1006.0" layoutY="610.0" prefHeight="122.0" prefWidth="47.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="5.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXTextField labelFloat="true" prefHeight="30.0" prefWidth="188.0" promptText="Subject Name" />
+            <JFXTextField fx:id="clmAverage4" labelFloat="true" prefHeight="30.0" prefWidth="188.0" GridPane.rowIndex="2" />
+            <JFXTextField fx:id="clmQtly4" labelFloat="true" prefHeight="30.0" prefWidth="56.0" />
+         </children>
+      </GridPane>
+      <Text fill="#005b39" layoutX="1115.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="70 - 100">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1114.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="60 - 69">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1115.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50 - 59">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1114.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="45 - 49">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1115.0" layoutY="463.0" strokeType="OUTSIDE" strokeWidth="0.0" text="40 - 44">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1114.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0 - 39">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1265.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="A">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1266.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="B">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1266.0" layoutY="369.0" strokeType="OUTSIDE" strokeWidth="0.0" text="C">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1267.0" layoutY="414.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1266.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="E">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text fill="#005b39" layoutX="1268.0" layoutY="506.0" strokeType="OUTSIDE" strokeWidth="0.0" text="F">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="clmID" labelFloat="true" layoutX="761.0" layoutY="143.0" promptText="ID" />
+      <Line endX="136.3333740234375" layoutX="913.0" layoutY="176.0" startX="-131.0" stroke="#005b39" strokeWidth="2.0" />
+   </children>
+</AnchorPane>

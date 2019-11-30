@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1368.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.timeTable.timeTableController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="102.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="379.0" layoutY="60.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Time Table" wrappingWidth="513.3333892822266">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="82.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Student Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnBack" layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="47.0" prefWidth="45.0" style="-fx-background-color: transparent;" stylesheets="@../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="84.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="101.0" fitWidth="93.0" layoutX="845.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/calendar-512%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="rootAnchorPane" layoutX="-1.0" layoutY="93.0" prefHeight="749.0" prefWidth="1369.0" stylesheets="@../../css/School.css">
+         <children>
+            <AnchorPane layoutY="1.0" prefHeight="740.0" prefWidth="1369.0" stylesheets="@../../css/main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <children>
+                  <Button fx:id="viewTimeTable" alignment="CENTER" contentDisplay="TOP" layoutX="24.0" layoutY="213.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#viewTimeTable" prefHeight="135.0" prefWidth="152.0" text="Print Time Table">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="76.0" fitWidth="92.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8_Print_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="updateTimeTable" contentDisplay="TOP" layoutX="23.0" layoutY="411.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#updateTimeTable" prefHeight="136.0" prefWidth="152.0" text="Update Time Table">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="63.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/upgrade-logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <JFXTextField fx:id="clmClass" focusColor="WHITE" labelFloat="true" layoutX="569.0" layoutY="59.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="370.0" promptText="Enter Class for Time Table" style="-fx-background-color: white;" unFocusColor="WHITE">
+                     <font>
+                        <Font name="Ubuntu Regular" size="20.0" />
+                     </font>
+                  </JFXTextField>
+                  <Text layoutX="629.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="JS ... TIME TABLE" wrappingWidth="318.91082763671875">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="clmID" labelFloat="true" layoutX="344.0" layoutY="43.0" promptText="ID" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="539.0" layoutX="199.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1160.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="92.0" layoutX="200.0" layoutY="384.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1159.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="88.0" layoutX="198.0" layoutY="562.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1161.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffb21f" height="539.0" layoutX="198.0" layoutY="193.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="152.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#65ff21" height="101.0" layoutX="347.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1012.0" />
+      <Line endX="-115.0" endY="584.0" layoutX="645.0" layoutY="148.0" startX="-115.0" startY="46.88932800292969" strokeWidth="2.0" />
+      <Line endX="50.0" layoutX="299.0" layoutY="204.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="50.0" layoutX="299.0" layoutY="385.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="50.0" layoutX="301.0" layoutY="475.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="50.0" layoutX="300.0" layoutY="563.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="50.0" layoutX="299.0" layoutY="649.0" startX="-100.0" strokeWidth="2.0" />
+      <Line endX="-115.0" endY="583.0" layoutX="833.0" layoutY="149.0" startX="-115.0" startY="47.22267150878906" strokeWidth="2.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1fb4" height="538.0" layoutX="919.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="60.0" />
+      <Button layoutX="757.0" layoutY="379.0" mnemonicParsing="false" prefHeight="56.0" prefWidth="385.0" style="-fx-background-color: transparent; -fx-font-size: 36; -fx-font-weight: bold;" stylesheets="@../../css/School.css" text="B R E A K   T I M E">
+         <styleClass>
+            <String fx:value="flat" />
+            <String fx:value="Button3" />
+         </styleClass>
+      </Button>
+      <Line endX="-115.0" endY="583.0" layoutX="1282.0" layoutY="149.0" startX="-115.0" startY="45.88932800292969" strokeWidth="2.0" />
+      <Text layoutX="228.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MONDAY">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="228.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TUESDAY">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="210.0" layoutY="525.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WEDNESDAY">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="220.0" layoutY="612.0" strokeType="OUTSIDE" strokeWidth="0.0" text="THURSDAY">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="236.0" layoutY="696.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FRIDAY">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="357.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8.00AM - 9.00AM">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="534.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9.00AM - 10.00AM">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="720.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10.00AM - 11.00AM">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="984.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12.00PM - 1.00PM">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff421f" height="101.0" layoutX="199.0" layoutY="194.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="151.0" />
+      <Text layoutX="1174.0" layoutY="228.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1.00PM - 2.00PM">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="263.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PERIOD">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="218.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DAY">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Line endX="112.0" endY="54.555999755859375" layoutX="237.0" layoutY="238.0" startX="-37.33332824707031" startY="-41.444000244140625" strokeWidth="2.0" />
+      <GridPane layoutX="349.0" layoutY="294.0" prefHeight="91.0" prefWidth="182.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm1" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="530.0" layoutY="382.0" prefHeight="94.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm7" prefHeight="34.0" prefWidth="194.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="533.0" layoutY="293.0" prefHeight="94.0" prefWidth="185.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm2" prefHeight="34.0" prefWidth="196.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="718.0" layoutY="651.0" prefHeight="81.0" prefWidth="206.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm23" prefHeight="34.0" prefWidth="201.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="530.0" layoutY="473.0" prefHeight="94.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm12" prefHeight="34.0" prefWidth="198.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="529.0" layoutY="663.0" prefHeight="70.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm22" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="349.0" layoutY="384.0" prefHeight="92.0" prefWidth="182.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm6" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="530.0" layoutY="556.0" prefHeight="94.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm17" prefHeight="34.0" prefWidth="190.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="718.0" layoutY="475.0" prefHeight="87.0" prefWidth="202.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm13" prefHeight="34.0" prefWidth="210.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="718.0" layoutY="563.0" prefHeight="85.0" prefWidth="202.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm18" prefHeight="34.0" prefWidth="210.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="980.0" layoutY="380.0" prefHeight="94.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm9" prefHeight="34.0" prefWidth="190.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="979.0" layoutY="292.0" prefHeight="94.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm4" prefHeight="34.0" prefWidth="196.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="980.0" layoutY="476.0" prefHeight="86.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm14" prefHeight="34.0" prefWidth="200.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="979.0" layoutY="647.0" prefHeight="84.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm24" prefHeight="34.0" prefWidth="205.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="980.0" layoutY="564.0" prefHeight="86.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm19" prefHeight="34.0" prefWidth="193.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="1169.0" layoutY="381.0" prefHeight="94.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm10" prefHeight="34.0" prefWidth="193.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="1168.0" layoutY="291.0" prefHeight="94.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm5" prefHeight="34.0" prefWidth="192.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="1169.0" layoutY="476.0" prefHeight="87.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm15" prefHeight="34.0" prefWidth="206.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="1168.0" layoutY="648.0" prefHeight="84.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm25" prefHeight="34.0" prefWidth="202.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="1169.0" layoutY="562.0" prefHeight="86.0" prefWidth="189.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm20" prefHeight="34.0" prefWidth="200.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="349.0" layoutY="474.0" prefHeight="90.0" prefWidth="184.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm11" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="348.0" layoutY="650.0" prefHeight="79.0" prefWidth="182.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm21" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="349.0" layoutY="561.0" prefHeight="88.0" prefWidth="183.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm16" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="718.0" layoutY="291.0" prefHeight="94.0" prefWidth="203.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm3" prefHeight="34.0" prefWidth="206.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="719.0" layoutY="381.0" prefHeight="94.0" prefWidth="201.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <JFXComboBox fx:id="clm8" prefHeight="34.0" prefWidth="208.0" promptText="Select Subject" />
+         </children>
+      </GridPane>
+      <JFXTextField fx:id="clm26" focusColor="WHITE" labelFloat="true" layoutX="352.0" layoutY="242.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="175.0" promptText="Enter Period" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="Ubuntu Regular" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="clm27" focusColor="WHITE" labelFloat="true" layoutX="536.0" layoutY="242.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="175.0" promptText="Enter Period" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="Ubuntu Regular" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="clm28" focusColor="WHITE" labelFloat="true" layoutX="731.0" layoutY="242.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="175.0" promptText="Enter Period" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="Ubuntu Regular" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="clm29" focusColor="WHITE" labelFloat="true" layoutX="985.0" layoutY="242.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="175.0" promptText="Enter Period" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="Ubuntu Regular" size="20.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="clm30" focusColor="WHITE" labelFloat="true" layoutX="1175.0" layoutY="242.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="34.0" prefWidth="175.0" promptText="Enter Period" style="-fx-background-color: white;" unFocusColor="WHITE">
+         <font>
+            <Font name="Ubuntu Regular" size="20.0" />
+         </font>
+      </JFXTextField>
+      <TextField fx:id="AdNo" layoutX="32.0" layoutY="148.0" prefHeight="37.0" prefWidth="131.0" promptText="Enter ID" />
+      <Button fx:id="searchStudent" layoutX="34.0" layoutY="199.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#searchStudent" prefHeight="45.0" prefWidth="127.0" text="Search">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="42.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/icons8_Search_96px.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>

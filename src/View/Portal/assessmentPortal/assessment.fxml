@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.ScatterChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Portal.assessmentPortal.assessmentController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="88.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="210.0" layoutY="59.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Assessement Portal" wrappingWidth="680.0">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="425.0" layoutY="82.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="94.0" fitWidth="123.0" layoutX="916.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Business_Graphs__Charts-14-512.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBack" layoutX="8.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="47.0" prefWidth="45.0" style="-fx-background-color: transparent;" stylesheets="@../../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="74.0" fitWidth="71.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+      <AnchorPane id="AnchorPane" layoutY="144.0" prefHeight="624.0" prefWidth="1368.0" stylesheets="@../../../css/main.css">
+         <children>
+            <PieChart fx:id="PieChart" layoutX="835.0" layoutY="278.0" prefHeight="339.0" prefWidth="510.0" />
+            <StackedBarChart fx:id="chartView" layoutY="6.0" prefHeight="288.0" prefWidth="699.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </StackedBarChart>
+            <BarChart fx:id="lineChart" layoutX="-2.0" layoutY="293.0" prefHeight="326.0" prefWidth="825.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <ScatterChart fx:id="scatterView" layoutX="689.0" layoutY="1.0" prefHeight="296.0" prefWidth="678.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis side="LEFT" />
+              </yAxis>
+            </ScatterChart>
+         </children>
+      </AnchorPane>
+      <Button fx:id="checkStat" layoutX="1176.0" layoutY="98.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnCheckStatistics" prefHeight="45.0" prefWidth="164.0" text="Check Statistics">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/Business_Graphs__Charts-14-512.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../../../css/main.css" />
+            <URL value="@../../../css/School.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="Button1" />
+         </styleClass>
+      </Button>
+      <ComboBox fx:id="loadTerm" layoutX="247.0" layoutY="104.0" prefHeight="31.0" prefWidth="123.0" promptText="Select Term" />
+      <Label layoutX="197.0" layoutY="107.0" prefHeight="23.0" prefWidth="68.0" text="Term: " />
+      <ComboBox fx:id="loadClasses" layoutX="457.0" layoutY="103.0" prefHeight="31.0" prefWidth="119.0" promptText="Select Class" />
+      <Label layoutX="405.0" layoutY="108.0" prefHeight="23.0" prefWidth="55.0" text="Class: " />
+      <ComboBox fx:id="loadSubject" layoutX="980.0" layoutY="103.0" prefHeight="31.0" prefWidth="158.0" promptText="Select Subject" />
+      <Label layoutX="922.0" layoutY="108.0" prefHeight="23.0" prefWidth="55.0" text="Subject:" />
+      <Text fill="RED" layoutX="5.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chart View">
+         <font>
+            <Font name="Ubuntu Bold" size="30.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="loadDepartment" layoutX="722.0" layoutY="103.0" prefHeight="31.0" prefWidth="163.0" promptText="Select Department" />
+      <Label layoutX="622.0" layoutY="108.0" prefHeight="23.0" prefWidth="105.0" text="Department:" />
+   </children>
+</AnchorPane>

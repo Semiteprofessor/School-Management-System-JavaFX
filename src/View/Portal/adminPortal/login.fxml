@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Portal.adminPortal.loginController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="101.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="455.0" layoutY="62.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Login Page" wrappingWidth="514.6666717529297">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="461.0" layoutY="90.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="107.0" fitWidth="105.0" layoutX="854.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Images/icons8_Key_96px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="224.0" fitWidth="186.0" layoutX="604.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Images/pf-ake0053-eye-l.jpg" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="usernameField" focusColor="#686868" labelFloat="true" layoutX="545.0" layoutY="357.0" prefHeight="40.0" prefWidth="296.0" promptText="User Name" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="pwdField" focusColor="#686868" labelFloat="true" layoutX="547.0" layoutY="438.0" prefHeight="40.0" prefWidth="296.0" promptText="Password" unFocusColor="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXPasswordField>
+      <Button fx:id="Login" layoutX="579.0" layoutY="533.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#Login" prefHeight="87.0" prefWidth="225.0" style="-fx-font-family: ubuntu; -fx-font-weight: bold; -fx-font-size: 20;" text="LOGIN">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="hover-hand" />
+            <String fx:value="Button1" />
+            <String fx:value="back-color8" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../../css/School.css" />
+         </stylesheets>
+      </Button>
+   </children>
+</AnchorPane>

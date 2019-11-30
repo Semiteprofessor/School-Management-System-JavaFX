@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1366.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Inventory.inventoryController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="101.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="393.0" layoutY="62.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Inventory" wrappingWidth="514.6666717529297">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="399.0" layoutY="90.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="School Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="101.0" fitWidth="108.0" layoutX="889.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/open-door-exit-icon-10.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnBack" layoutX="8.0" layoutY="2.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="47.0" prefWidth="45.0" style="-fx-background-color: transparent;" stylesheets="@../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="93.0" fitWidth="82.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+         </children>
+      </Pane>
+      <Button fx:id="laboratory" alignment="CENTER" layoutX="42.0" layoutY="338.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnLaboratory" prefHeight="56.0" prefWidth="266.0" style="-fx-font-family: ubuntu; -fx-font-weight: bold; -fx-font-size: 20;" text="Laboratory">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="hover-hand" />
+            <String fx:value="Button1" />
+            <String fx:value="back-color4" />
+            <String fx:value="Button2" />
+            <String fx:value="hover_border1" />
+            <String fx:value="border-30px" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+      </Button>
+      <ImageView fitHeight="204.0" fitWidth="323.0" layoutX="22.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/16260ed287c.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="healtheCentre" alignment="CENTER" layoutX="378.0" layoutY="338.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnHealtheCentre" prefHeight="56.0" prefWidth="266.0" style="-fx-font-family: ubuntu; -fx-font-weight: bold; -fx-font-size: 20;" text="Health Centre">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="hover-hand" />
+            <String fx:value="Button1" />
+            <String fx:value="back-color4" />
+            <String fx:value="Button2" />
+            <String fx:value="hover_border1" />
+            <String fx:value="border-30px" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+      </Button>
+      <ImageView fitHeight="209.0" fitWidth="314.0" layoutX="350.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/jjs.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="library" alignment="CENTER" layoutX="713.0" layoutY="338.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnLibrary" prefHeight="56.0" prefWidth="266.0" style="-fx-font-family: ubuntu; -fx-font-weight: bold; -fx-font-size: 20;" text="Library">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="hover-hand" />
+            <String fx:value="Button1" />
+            <String fx:value="back-color4" />
+            <String fx:value="Button2" />
+            <String fx:value="hover_border1" />
+            <String fx:value="border-30px" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+      </Button>
+      <ImageView fitHeight="204.0" fitWidth="347.0" layoutX="685.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/17187711757_127e73b1c9_b.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="computer" alignment="CENTER" layoutX="1053.0" layoutY="338.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnComputer" prefHeight="56.0" prefWidth="266.0" style="-fx-font-family: ubuntu; -fx-font-weight: bold; -fx-font-size: 20;" text="Computer Room">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="hover-hand" />
+            <String fx:value="Button1" />
+            <String fx:value="back-color4" />
+            <String fx:value="Button2" />
+            <String fx:value="hover_border1" />
+            <String fx:value="border-30px" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+      </Button>
+      <ImageView fitHeight="204.0" fitWidth="307.0" layoutX="1032.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/comp.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="drawing" alignment="CENTER" layoutX="47.0" layoutY="630.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnDrawing" prefHeight="56.0" prefWidth="266.0" style="-fx-font-family: ubuntu; -fx-font-weight: bold; -fx-font-size: 20;" text="Technical Drawing Room">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="hover-hand" />
+            <String fx:value="Button1" />
+            <String fx:value="back-color4" />
+            <String fx:value="Button2" />
+            <String fx:value="hover_border1" />
+            <String fx:value="border-30px" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+      </Button>
+      <ImageView fitHeight="205.0" fitWidth="323.0" layoutX="22.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Drawing_Classroom_01-820x450.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="homeEcons" alignment="CENTER" layoutX="378.0" layoutY="630.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnHomeEcons" prefHeight="56.0" prefWidth="266.0" style="-fx-font-family: ubuntu; -fx-font-weight: bold; -fx-font-size: 20;" text="Home Econs Room">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="hover-hand" />
+            <String fx:value="Button1" />
+            <String fx:value="back-color4" />
+            <String fx:value="Button2" />
+            <String fx:value="hover_border1" />
+            <String fx:value="border-30px" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+      </Button>
+      <ImageView fitHeight="204.0" fitWidth="332.0" layoutX="357.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/Home_Economics_Room_8.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="musical" alignment="CENTER" layoutX="713.0" layoutY="630.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnMusical" prefHeight="56.0" prefWidth="266.0" style="-fx-font-family: ubuntu; -fx-font-weight: bold; -fx-font-size: 20;" text="Musical Room">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="hover-hand" />
+            <String fx:value="Button1" />
+            <String fx:value="back-color4" />
+            <String fx:value="Button2" />
+            <String fx:value="hover_border1" />
+            <String fx:value="border-30px" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+      </Button>
+      <ImageView fitHeight="200.0" fitWidth="328.0" layoutX="692.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/images1.jpeg.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="sport" alignment="CENTER" layoutX="1053.0" layoutY="630.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnSport" prefHeight="56.0" prefWidth="266.0" style="-fx-font-family: ubuntu; -fx-font-weight: bold; -fx-font-size: 20;" text="Sport Room">
+         <font>
+            <Font name="Ubuntu Bold" size="22.0" />
+         </font>
+         <effect>
+            <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+               <bumpInput>
+                  <Shadow height="32.86" radius="16.6725" width="35.83" />
+               </bumpInput>
+               <light>
+                  <Light.Distant azimuth="199.88" elevation="91.05" />
+               </light>
+            </Lighting>
+         </effect>
+         <styleClass>
+            <String fx:value="card" />
+            <String fx:value="hover-color1" />
+            <String fx:value="hover-hand" />
+            <String fx:value="Button1" />
+            <String fx:value="back-color4" />
+            <String fx:value="Button2" />
+            <String fx:value="hover_border1" />
+            <String fx:value="border-30px" />
+         </styleClass>
+         <stylesheets>
+            <URL value="@../../css/main.css" />
+            <URL value="@../../css/School.css" />
+         </stylesheets>
+      </Button>
+      <ImageView fitHeight="204.0" fitWidth="307.0" layoutX="1032.0" layoutY="422.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Images/ggh.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

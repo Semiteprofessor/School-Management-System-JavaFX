@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1368.0" stylesheets="@../../css/main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Syllabus.syllabusController">
+   <children>
+      <Pane layoutX="-7.0" prefHeight="102.0" prefWidth="1375.0" style="-fx-background-color: #003cc7;" stylesheets="@../../css/main.css">
+         <children>
+            <Text fill="WHITE" layoutX="379.0" layoutY="60.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Syllabus" wrappingWidth="513.3333892822266">
+               <font>
+                  <Font name="Ubuntu Bold" size="67.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="380.0" layoutY="82.0" lineSpacing="200.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="txt-center" text="Student Management" wrappingWidth="233.3333511352539">
+               <font>
+                  <Font name="Ubuntu Regular" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnBack" layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onAction="#btnBackHomeOnAction" prefHeight="47.0" prefWidth="45.0" style="-fx-background-color: transparent;" stylesheets="@../../css/School.css">
+               <graphic>
+                  <ImageView fitHeight="84.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../Images/back-button-icon-png-8.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <styleClass>
+                  <String fx:value="hover-hand" />
+                  <String fx:value="hover-color" />
+               </styleClass>
+            </Button>
+            <ImageView fitHeight="101.0" fitWidth="93.0" layoutX="845.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Images/syllabus-icon-13.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="rootAnchorPane" layoutX="-1.0" layoutY="93.0" prefHeight="749.0" prefWidth="1369.0" stylesheets="@../../css/School.css">
+         <children>
+            <AnchorPane layoutY="1.0" prefHeight="740.0" prefWidth="1369.0" stylesheets="@../../css/main.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="1.0">
+               <children>
+                  <Button fx:id="viewSubject" alignment="CENTER" contentDisplay="TOP" layoutX="24.0" layoutY="346.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnPrintSubject" prefHeight="87.0" prefWidth="152.0" text="Print Subject">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="42.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8_Print_96px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="updateSubject" contentDisplay="TOP" layoutX="23.0" layoutY="486.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnUpdateSubject" prefHeight="87.0" prefWidth="152.0" text="Update Subject">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                     <graphic>
+                        <ImageView fitHeight="40.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/upgrade-logo.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="viewSubject" alignment="CENTER" contentDisplay="TOP" layoutX="24.0" layoutY="194.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnSubjectView" prefHeight="94.0" prefWidth="152.0" text="Subject View">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/icons8_Eye_96px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                  </Button>
+                  <Button fx:id="classNote" alignment="CENTER" contentDisplay="TOP" layoutX="24.0" layoutY="56.0" minHeight="-Infinity" mnemonicParsing="false" onAction="#btnClassNote" prefHeight="94.0" prefWidth="152.0" text="Class Note">
+                     <font>
+                        <Font name="Ubuntu Bold" size="22.0" />
+                     </font>
+                     <effect>
+                        <Lighting diffuseConstant="1.21" specularConstant="0.0" specularExponent="40.0" surfaceScale="10.0">
+                           <bumpInput>
+                              <Shadow height="32.86" radius="16.6725" width="35.83" />
+                           </bumpInput>
+                           <light>
+                              <Light.Distant azimuth="199.88" elevation="91.05" />
+                           </light>
+                        </Lighting>
+                     </effect>
+                     <graphic>
+                        <ImageView fitHeight="46.0" fitWidth="49.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../Images/common_43_icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <stylesheets>
+                        <URL value="@../../css/main.css" />
+                        <URL value="@../../css/School.css" />
+                     </stylesheets>
+                     <styleClass>
+                        <String fx:value="card" />
+                        <String fx:value="hover-color1" />
+                        <String fx:value="hover-hand" />
+                        <String fx:value="Button1" />
+                     </styleClass>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="589.0" layoutX="199.0" layoutY="131.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1160.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff1fb4" height="48.0" layoutX="199.0" layoutY="131.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="1161.0" />
+      <Text layoutX="277.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT NAME">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Line endX="-115.0" endY="635.0" layoutX="368.0" layoutY="85.0" startX="-115.0" startY="46.88932800292969" strokeWidth="2.0" />
+      <Line endX="-115.0" endY="634.0" layoutX="811.0" layoutY="86.0" startX="-115.0" startY="47.22267150878906" strokeWidth="2.0" />
+      <Line endX="-115.0" endY="634.0" layoutX="1240.0" layoutY="86.0" startX="-115.0" startY="45.88932800292969" strokeWidth="2.0" />
+      <Line endX="801.3333740234375" endY="124.88934326171875" layoutX="557.0" layoutY="108.0" startX="-356.0" startY="124.88934326171875" strokeWidth="2.0" />
+      <Line endX="801.3333740234375" endY="124.88934326171875" layoutX="556.0" layoutY="162.0" startX="-356.0" startY="124.88934326171875" strokeWidth="2.0" />
+      <Line endX="801.3333740234375" endY="124.88934326171875" layoutX="557.0" layoutY="216.0" startX="-356.0" startY="124.88934326171875" strokeWidth="2.0" />
+      <Line endX="801.3333740234375" endY="124.88934326171875" layoutX="556.0" layoutY="271.0" startX="-356.0" startY="124.88934326171875" strokeWidth="2.0" />
+      <Line endX="801.3333740234375" endY="124.88934326171875" layoutX="557.0" layoutY="325.0" startX="-356.0" startY="124.88934326171875" strokeWidth="2.0" />
+      <Line endX="801.3333740234375" endY="124.88934326171875" layoutX="556.0" layoutY="379.0" startX="-356.0" startY="124.88934326171875" strokeWidth="2.0" />
+      <Line endX="801.3333740234375" endY="124.88934326171875" layoutX="557.0" layoutY="434.0" startX="-356.0" startY="124.88934326171875" strokeWidth="2.0" />
+      <Line endX="801.3333740234375" endY="124.88934326171875" layoutX="556.0" layoutY="491.0" startX="-356.0" startY="124.88934326171875" strokeWidth="2.0" />
+      <JFXComboBox fx:id="sub1" layoutX="263.0" layoutY="188.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <Line endX="801.3333740234375" endY="124.88934326171875" layoutX="557.0" layoutY="543.0" startX="-356.0" startY="124.88934326171875" strokeWidth="2.0" />
+      <Line endX="-115.0" endY="635.0" layoutX="567.0" layoutY="85.0" startX="-115.0" startY="46.88932800292969" strokeWidth="2.0" />
+      <Line endX="-115.0" endY="634.0" layoutX="1068.0" layoutY="85.0" startX="-115.0" startY="47.22267150878906" strokeWidth="2.0" />
+      <Text layoutX="205.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="S/N">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="481.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT TEACHER">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="724.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SUBJECT OUTLINE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="1007.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TERM">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="1204.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" text="REMARK">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="218.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="218.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="220.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="220.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="219.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="219.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="221.0" layoutY="541.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="221.0" layoutY="597.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="221.0" layoutY="650.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <Text layoutX="214.0" layoutY="706.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="sub2" layoutX="262.0" layoutY="242.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <JFXComboBox fx:id="sub3" layoutX="263.0" layoutY="296.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <JFXComboBox fx:id="sub4" layoutX="262.0" layoutY="350.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <JFXComboBox fx:id="sub5" layoutX="262.0" layoutY="405.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <JFXComboBox fx:id="sub6" layoutX="261.0" layoutY="459.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <JFXComboBox fx:id="sub7" layoutX="262.0" layoutY="513.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <JFXComboBox fx:id="sub8" layoutX="261.0" layoutY="567.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <JFXComboBox fx:id="sub9" layoutX="262.0" layoutY="622.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <JFXComboBox fx:id="sub10" layoutX="261.0" layoutY="676.0" prefHeight="34.0" prefWidth="181.0" promptText="Select Subject" />
+      <JFXTextField fx:id="teach1" labelFloat="true" layoutX="470.0" layoutY="191.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextField fx:id="teach2" labelFloat="true" layoutX="470.0" layoutY="245.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextField fx:id="teach3" labelFloat="true" layoutX="470.0" layoutY="299.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextField fx:id="teach4" labelFloat="true" layoutX="470.0" layoutY="353.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextField fx:id="teach5" labelFloat="true" layoutX="469.0" layoutY="408.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextField fx:id="teach6" labelFloat="true" layoutX="469.0" layoutY="462.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextField fx:id="teach7" labelFloat="true" layoutX="469.0" layoutY="516.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextField fx:id="teach8" labelFloat="true" layoutX="469.0" layoutY="570.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextField fx:id="teach9" labelFloat="true" layoutX="470.0" layoutY="625.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextField fx:id="teach10" labelFloat="true" layoutX="470.0" layoutY="677.0" prefHeight="31.0" prefWidth="207.0" promptText="Enter Name" />
+      <JFXTextArea fx:id="out1" layoutX="700.0" layoutY="181.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXTextArea fx:id="out2" layoutX="700.0" layoutY="236.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXTextArea fx:id="out3" layoutX="700.0" layoutY="289.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXTextArea fx:id="out4" layoutX="700.0" layoutY="344.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXTextArea fx:id="out5" layoutX="700.0" layoutY="399.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXTextArea fx:id="out6" layoutX="700.0" layoutY="454.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXTextArea fx:id="out7" layoutX="700.0" layoutY="507.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXTextArea fx:id="out9" layoutX="700.0" layoutY="562.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXTextArea fx:id="out9" layoutX="700.0" layoutY="617.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXTextArea fx:id="out10" layoutX="700.0" layoutY="669.0" prefHeight="48.0" prefWidth="249.0" promptText="Outline" />
+      <JFXComboBox fx:id="term1" layoutX="966.0" layoutY="188.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXComboBox fx:id="term2" layoutX="965.0" layoutY="242.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXComboBox fx:id="term3" layoutX="966.0" layoutY="296.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXComboBox fx:id="term4" layoutX="965.0" layoutY="350.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXComboBox fx:id="term5" layoutX="965.0" layoutY="405.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXComboBox fx:id="term6" layoutX="964.0" layoutY="459.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXComboBox fx:id="term7" layoutX="965.0" layoutY="513.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXComboBox fx:id="term8" layoutX="964.0" layoutY="567.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXComboBox fx:id="term9" layoutX="965.0" layoutY="622.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXComboBox fx:id="term10" layoutX="964.0" layoutY="676.0" prefHeight="34.0" prefWidth="150.0" promptText="Select Term" />
+      <JFXTextArea fx:id="note1" layoutX="1132.0" layoutY="181.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+      <JFXTextArea fx:id="note2" layoutX="1132.0" layoutY="236.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+      <JFXTextArea fx:id="note3" layoutX="1132.0" layoutY="289.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+      <JFXTextArea fx:id="note4" layoutX="1132.0" layoutY="344.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+      <JFXTextArea fx:id="note5" layoutX="1132.0" layoutY="399.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+      <JFXTextArea fx:id="note6" layoutX="1132.0" layoutY="454.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+      <JFXTextArea fx:id="note7" layoutX="1132.0" layoutY="507.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+      <JFXTextArea fx:id="note8" layoutX="1132.0" layoutY="562.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+      <JFXTextArea fx:id="note9" layoutX="1132.0" layoutY="617.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+      <JFXTextArea fx:id="note10" layoutX="1132.0" layoutY="669.0" prefHeight="48.0" prefWidth="220.0" promptText="Note" />
+   </children>
+</AnchorPane>
